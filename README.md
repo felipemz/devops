@@ -20,5 +20,11 @@ Após instalar o Minishift, faça o mesmo procedimento do PATH com o excutável 
 Você também vai precisar do Origin Client, a interface gráfica não fornece todas as ferramentas necessárias para administrar o Minishift.
 Download do OC: https://github.com/openshift/origin/releases (A criação do PATH é da mesma forma que os anteriores)
 
-O início do Minishift:
-[image:https://github.com/felipemz/devops/blob/master/Minishift_start.jpg]
+O início do Minishift pode ser visto na imagem Minishift_start.jpg neste repositório.
+
+O usuário informado para entrar no sistema é developer. Para a senha, é necessário entrar com qualquer valor, e este valor será a
+senha padrão deste usuário.
+
+A imagem minishift_running.jpg mostra a tela de login do programa. A imagem Minishift_console.jpg mostra o sistema já logado.
+
+
