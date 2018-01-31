@@ -19,3 +19,6 @@ Faça o PATH do driver KVM: copie o driver para /usr/local/bin/ e o configure co
 Após instalar o Minishift, faça o mesmo procedimento do PATH com o excutável minishift.
 Você também vai precisar do Origin Client, a interface gráfica não fornece todas as ferramentas necessárias para administrar o Minishift.
 Download do OC: https://github.com/openshift/origin/releases (A criação do PATH é da mesma forma que os anteriores)
+
+O início do Minishift:
+[image:devops/Minishift_start.jpg]
