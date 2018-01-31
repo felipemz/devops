@@ -36,8 +36,9 @@ Para fazer o Nginx executar, fiz a alteração das permissões para permitir exe
 ATENÇÂO: ISSO SÓ DEVE SER FEITO EM AMBIENTE DE TESTES! NUNCA EM PRODUÇÃO.
 
 No console SSH, você deve logar como system:adm no projeto, neste teste my-project e depois permitir a execução de qualquer usuário:
-sudo oc login -u system:admin -n my-project
-sudo oc adm policy add-scc-to-user anyuid -n my-project -z default
+
+#sudo oc login -u system:admin -n my-project
+#sudo oc adm policy add-scc-to-user anyuid -n my-project -z default
 
 A imagem Minishift_deploy_nginx.jpg mostra a aplicação funcionando dentro do Minishift.
 
