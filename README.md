@@ -21,4 +21,4 @@ Você também vai precisar do Origin Client, a interface gráfica não fornece t
 Download do OC: https://github.com/openshift/origin/releases (A criação do PATH é da mesma forma que os anteriores)
 
 O início do Minishift:
-[image:devops/Minishift_start.jpg]
+[image:https://github.com/felipemz/devops/blob/master/Minishift_start.jpg]
