@@ -55,12 +55,13 @@ A imagem Minishift_deploy_nginx.jpg mostra a aplicação funcionando dentro do M
 
 Pergunta 3:
 
-Uma rotina no CRON para executar em intervalos, de 1 em 1 minuto, para validar a existência do arquivo json gerado pelo Nginx. Caso não encontre o arquivo, envia um e-mail com a mensagem de sistema indisponível.
+Uma rotina no CRON para executar em intervalos, de 1 em 1 minuto, rodando um script para validar a existência do arquivo json gerado pelo Nginx. Caso não encontre o arquivo, envia um e-mail com a mensagem de sistema indisponível.
 
+validador.sh <br />
 #!/bin/bash <br />
 if [ ! -s filename ] <br />
 then <br />
-        echo "Arquivo nao existe" | mailx -s "Sistema indisponivel" abc@xyz.com <br />
+        echo "Arquivo nao existe" | mailx -s "Sistema indisponivel" alerta@email.com <br />
 else <br />
         echo "Arquivo encontrado" <br />
         fi <br />
