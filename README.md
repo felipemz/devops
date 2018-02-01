@@ -2,8 +2,12 @@
 
 README
 
-O objetivo deste README é prover informações que possibilitem qualquer pessoa a instalar, configurar e acessar o Minishift e,
-adicionar o Nginx ao Minishift.
+Pergunta 1:
+
+Para atender esta demanda, poderia ser utilizado o serviço do Rundeck instalado no próprio servidor ou apenas um nodo configurado. Seria feito uma validação para saber se o arquivo existe no local, o arquivo seria movido para o novo local a ser executado e depois no Rundeck seria executado o comando java -jar com o nome do arquivo recebido.
+
+Para garantir o procedimento, o arquivo deve ser movido/excluido do FTP a cada execução. Desta forma é possível agendar diversas execuções no Rundeck mas garantindo que o processo só continua com a existência do arquivo no FTP.
+
 
 Pergunta 2:
 
@@ -47,6 +51,20 @@ No console SSH, você deve logar como system:adm no projeto, neste teste my-proj
 
 A imagem Minishift_deploy_nginx.jpg mostra a aplicação funcionando dentro do Minishift.
 
+
+
+Pergunta 3:
+
+Uma rotina no CRON para executar em intervalos, de 1 em 1 minuto, para validar a existência do arquivo json gerado pelo Nginx. Caso não encontre o arquivo, envia um e-mail com a mensagem de sistema indisponível.
+==========================
+#!/bin/bash
+if [ ! -s filename ]
+then
+        echo "Arquivo nao existe" | mailx -s "Sistema indisponivel" abc@xyz.com
+else
+        echo "Arquivo encontrado"
+        fi
+==========================
 
 
 
