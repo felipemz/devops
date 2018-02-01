@@ -57,13 +57,13 @@ Pergunta 3:
 
 Uma rotina no CRON para executar em intervalos, de 1 em 1 minuto, para validar a existência do arquivo json gerado pelo Nginx. Caso não encontre o arquivo, envia um e-mail com a mensagem de sistema indisponível.
 
-/#!/bin/bash
-/if [ ! -s filename ]
-/then
-/        echo "Arquivo nao existe" | mailx -s "Sistema indisponivel" abc@xyz.com
-/else
-/        echo "Arquivo encontrado"
-/        fi
+#!/bin/bash <br />
+if [ ! -s filename ] <br />
+then <br />
+        echo "Arquivo nao existe" | mailx -s "Sistema indisponivel" abc@xyz.com <br />
+else <br />
+        echo "Arquivo encontrado" <br />
+        fi <br />
 
 
 
