@@ -49,6 +49,8 @@ No console SSH, você deve logar como system:adm no projeto, neste teste my-proj
 
 #sudo oc adm policy add-scc-to-user anyuid -n my-project -z default
 
+Depois basta retornar ao seu projeto, na parte de overview e fazer o deploy do Nginx como mostra a imagem Minishift_deploy_nginx_2.jpg
+
 A imagem Minishift_deploy_nginx.jpg mostra a aplicação funcionando dentro do Minishift.
 
 
